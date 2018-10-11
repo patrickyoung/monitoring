@@ -1,0 +1,3 @@
+docker run -it -d --name blackbox-exporter-v1 -p 9115:9115 -v monitor/blackbox-exporter/config:/config lc_blackbox_monitor
+docker run -d --name prometheus-v1 -p 9090:9090 -v monitor/prometheus/config:/etc/prometheus prom/prometheus
+docker run -it -d --name grafana-v1 -p 3000:3000 grafana/grafana
